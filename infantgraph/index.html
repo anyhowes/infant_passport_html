@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=1024">
+      <title>Graph</title>
+		  <link rel="stylesheet" href="css/graph.css">
+   </head>
+
+   <body>
+      <div id="wrapper">
+
+         <div class="chart">
+            <h3>Infant height over the first two years of life</h3>
+            <table id="data-table" border="1" cellpadding="10" cellspacing="0"
+            summary="Tracking infant growth">
+               <caption>Height in cm</caption>
+               <thead>
+                  <tr>
+                     <td>&nbsp;</td>
+                     <th scope="col">New-born</th>
+                     <th scope="col">1 month</th>
+                     <th scope="col">2 months</th>
+                     <th scope="col">3 months</th>
+                     <th scope="col">4 months</th>
+                     <th scope="col">5 months</th>
+                     <th scope='col'>6 months</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row">Males</th>
+                     <td>49.9</td>
+                     <td>54.7</td>
+                     <td>58.4</td>
+                     <td>61.45</td>
+                     <td>63.9</td>
+                     <td>65.9</td>
+                     <td>67.6</td>
+                  </tr>
+                  <tr>
+                     <th scope="row">Females</th>
+                     <td>49.15</td>
+                     <td>53.7</td>
+                     <td>57.05</td>
+                     <td>59.8</td>
+                     <td>62.1</td>
+                     <td>64.05</td>
+                     <td>65.75</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+      <!--<div id="placeholder"></div>-->
+      <div id="content">
+
+    		<div class="demo-container">
+    			<div id="placeholder" class="demo-placeholder"></div>
+    		</div>
+
+		    <p><label><input id="enableTooltip" type="hidden" checked="checked"></input></label></p>
+
+	     </div>
+		  <!-- Grab jQuery from Google -->
+		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <!-- Get Flot-->
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.fillbetween.js"></script>
+      <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.axislabels.js"></script>
+
+      <!-- Example JavaScript-->
+      <script src="js/testflot.js"></script>
+
+   </body>
+</html>

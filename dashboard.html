@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dashboard</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <nav class="navbar">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#">Infant Passport</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="dropdown">
+			  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Growth and Development</a></li>
+				<li><a href="#">Nutrition</a></li>
+				<li><a href="#">Vaccinations</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Dashboard</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Pauline's Dashboard</h1>
+			<p class="lead">Here you will find your profile along with links to all of the individuals you have registered with Infant Passport and their at-a-glance information. </p>
+			<p>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#profileModal">Edit Profile</button>
+				<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#addModal">Add Newborn</button>
+			</p>
+			<div class="alert alert-info" role="info">
+				<strong>Stay On Top</strong> 
+				You have 3 recommended tasks
+			</div>
+		</div>
+		<h2>Profile</h2>
+		  <p>Here's the information you've shared with us about yourself.</p>            
+		  <table class="table table-hover">
+			<tbody>
+			  <tr>
+				<td>Name</td>
+				<td>Pauline Smith</td>
+			  </tr>
+			  <tr>
+				<td>Email address</td>
+				<td>pauline.smith@example.com</td>
+			  </tr>
+			  <tr>
+				<td>User Since</td>
+				<td>June 15, 2015</td>
+			  </tr>
+			</tbody>
+		  </table>
+    </div>   
+      
+	<div id="page-wrapper">
+		<div class="container-fluid" id="dashboard-tile">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mars fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>
+											<h1>Michael</h1>
+										</div>
+                                        <div>16 Months Old</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Timeline</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-venus fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>
+											<h1>Emily</h1>
+										</div>
+                                        <div>16 Months Old</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Timeline</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-venus fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>
+											<h1>Marley</h1>
+										</div>
+                                        <div>2 Months Old</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Timeline</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mars fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div>
+											<h1>Christopher</h1>
+										</div>
+                                        <div>3 Years Old</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Timeline</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+		</div>
+	
+	<!-- Modal content -->
+	<div id="profileModal" class="modal fade" role="dialogue">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Profile Information</h4>
+				</div>
+				<div class="modal-body">
+					<p>Change your information here.</p>
+					<form class="form-horizontal" role="form">
+						  <div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+							  <input type="email" class="form-control" id="email" placeholder="old_address@example.com">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Name:</label>
+							<div class="col-sm-10">
+							  <input type="password" class="form-control" id="pwd" placeholder="Old Name">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						  </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="addModal" class="modal fade" role="dialogue">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">New Infant</h4>
+				</div>
+				<div class="modal-body">
+					<p>Enter your newborn's information here</p>
+					 <form class="form-horizontal" role="form">
+						  <div class="form-group">
+							<label class="control-label col-sm-2" for="email">Name:</label>
+							<div class="col-sm-10">
+							  <input type="email" class="form-control" id="email" placeholder="First_Name Last_Name">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Birthdate:</label>
+							<div class="col-sm-10">
+							  <input type="password" class="form-control" id="pwd" placeholder="YYYY/MM/DD">
+							</div>
+						  </div>
+						  <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+					      <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+						  <div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+							  <button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						  </div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+			
+	<div class="navbar navbar-static-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>(c) 2015 Infant Passport.</p>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

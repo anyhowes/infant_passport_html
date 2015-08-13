@@ -1,0 +1,154 @@
+body {
+      position: relative;
+}
+
+
+.navbar-static-bottom{
+	margin-bottom: 0px;
+}
+
+.navbar, 
+.navbar a{
+	background-color: #FFFFFF;
+	color: #62C300;
+}
+
+.icon-bar {
+	background-color: #62C300;
+}
+
+
+
+/*CSS for timeline page*/
+.fa-pencil, .fa-floppy-o {
+	cursor: pointer; 
+	cursor: hand;
+}
+
+ul.nav-pills {
+      top: 20px;
+      position: fixed;
+}
+
+#section1 {color: #fff; background-color: #FFBB2D;}
+#section2 {color: #fff; background-color: #FFF52D;}
+#section3 {color: #fff; background-color: #8CED2A;}
+  
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, {
+        margin-left: 150px;
+    }
+}
+
+.scrollspy-section {
+	padding-top: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+/*Featurette CSS for the images on the home page*/
+
+#dashboard-tile{
+	padding-bottom: 40px;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+
+@media(max-width:1200px) {
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:991px) {
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:668px) {
+    .featurette-divider {
+        margin: 30px 0;
+    }
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+}
